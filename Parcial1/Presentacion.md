@@ -45,3 +45,5 @@ Hace un mes comencé con el proceso y el propósito de ponerme en forma, por ell
 ![VALORANT](https://th.bing.com/th/id/R.3575ebadc3e3a1237f177e39ab605377?rik=0UQ4e%2f7%2bERKpFA&pid=ImgRaw&r=0.JPG)
 
 Escuchar música tambien es de mis hobbies favoritos, soy muy abierto, me gusta de todo, de muchos generos, de cualquiet cantante, pero sin duda mi genero favorito es el Trap argentino, mi artista favorito es Mauro Ezequiel Lombardo Quiroga, Argentino, mejor conocido como __Duki__, tuve la fortuna hace unos meses de ir a uno de sus conciertos y es una experiencia increible.
+
+![Duki](https://www.bing.com/images/search?view=detailV2&ccid=rmPtEGr6&id=98B86672AF71C496122E90F0D184B225AB79A5AD&thid=OIP.rmPtEGr6CixOWccONWkD9QAAAA&mediaurl=https%3a%2f%2fc.tenor.com%2fTShmChwQ4xYAAAAM%2fduki.gif&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ae63ed106afa0a2c4e59c70e356903f5%3frik%3draV5qyWyhNHwkA%26pid%3dImgRaw%26r%3d0&exph=220&expw=220&q=duki+gif&simid=608005659750521054&FORM=IRPRST&ck=D31E8582DC73CE5EDE6897B35A35ABED&selectedIndex=4.GIF)
