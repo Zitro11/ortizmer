@@ -16,5 +16,16 @@ A todas las cajas se les puede aplicar las siguientes propiedades: width, height
 
 ![CAJA](https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png)
 
-Cada una de estas partes de la caja, se pueden modificar alterando sus dimensiones, colores, etc.
+Cada una de estas partes de la caja, se pueden modificar alterando sus dimensiones, colores, posicion en la pantalla etc.
 
+![Zonas](https://lenguajecss.com/css/modelo-de-cajas/que-es/positions.png)
+
+- Top: Se refiere a la parte superior del elemento.
+
+- Left: Se refiere a la parte izquierda del elemento.
+
+- Right: Se refiere a la parte derecha del elemento.
+
+- Bottom: Se refiere a la parte inferior del elemento.
+
+- Center: En algunos casos se puede especificar el valor center para referirse a la posición central entre los extremos horizontales o verticales.
