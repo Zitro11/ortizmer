@@ -1,0 +1,34 @@
+ul
+{
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+
+
+ul > li > ul
+{
+    display: none;
+}
+
+ul > li:hover > ul
+{
+    display: block;
+    height: 500%;
+}
+
+
+.opcion
+{
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    text-justify: auto;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li
+{
+    cursor: crosshair;
+}
