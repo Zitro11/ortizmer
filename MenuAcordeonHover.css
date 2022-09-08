@@ -1,0 +1,30 @@
+ul
+{
+    list-style: none;
+    width: 200px;
+    height: 500px;
+}
+
+ul > li > ul
+{
+    display: none;
+}
+
+ul > li:hover > ul
+{
+    display: block;
+    height: 100%;
+}
+
+.opcion
+{
+    background-color: green;
+    color: blueviolet;
+}
+
+.subOpcion
+{
+    padding-left: 20px;
+    background-color: black;
+    color: white;
+}
