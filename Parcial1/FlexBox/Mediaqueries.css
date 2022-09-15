@@ -1,0 +1,54 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: goldenrod;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja
+{
+    background-color: purple;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+}
+
+/*#caja1
+{ flex-grow: 1;}
+#caja2
+{ flex-grow: 2;}
+#caja3
+{ flex-grow: 3;}
+#caja4
+{ flex-grow: 4;}*/
+
+/*
+////Para el comportamiento de los hijos independientes////
+#caja1
+{
+    align-self: flex-start;
+}*/
+
+@media screen and (min-width: 400px) and (max-width: 800px)
+{
+
+}
+
+@media screen and (max-width: 399px)
+{
+
+}
