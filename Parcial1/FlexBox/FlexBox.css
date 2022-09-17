@@ -5,12 +5,13 @@
     padding: 0;
 }
 
+
 .contenedor
 {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: goldenrod;
+    background-color: gray;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,12 +37,17 @@
 #caja4
 { flex-grow: 4;}*/
 
-/*
-////Para el comportamiento de los hijos independientes////
-#caja1
+
+/*Para el comportamiento de los hijos independientes*/
+#caja3
 {
-    align-self: flex-start;
-}*/
+    align-self:center;
+    text-align: center;
+    margin-bottom: 300px;
+    background-color: black;
+    height: 70px;
+    width: 70px;
+}
 
 @media screen and (min-width: 400px) and (max-width: 800px)
 {
