@@ -1,0 +1,57 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 50% 30%;
+    grid-template-areas: 'menulat encabezado encabezado'
+                         'menulat columna1 columna2'
+                         'menulat piepagina piepagina';
+    justify-content: stretch;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.caja
+{
+    background-color: purple;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#caja1 
+{
+    grid-area: menulat;
+    background-image: url("https://i.pinimg.com/236x/08/ae/77/08ae7723ed2cb7e167352117b7f8b603.jpg");
+    background-size: 11rem;
+    color: gold;
+}
+
+#caja2
+{
+    grid-area: encabezado; color: white;
+    background-image: url("https://w0.peakpx.com/wallpaper/861/671/HD-wallpaper-duki-argentina-duketo-duko-logo-logos-music-musica-trap.jpg");
+    background-size: 7rem;
+    color: gold;
+}
+
+#caja3 {grid-area: columna1; background-color:cornflowerblue;}
+#caja4
+{
+  grid-area: columna2;
+  color:khaki;
+}
+#caja5 {grid-area: piepagina;}
