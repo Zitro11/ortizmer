@@ -32,12 +32,13 @@
     border: 2px solid black;
 }
 
-#caja1 
+#caja1:hover
 {
     grid-area: menulat;
     background-image: url("https://i.pinimg.com/236x/08/ae/77/08ae7723ed2cb7e167352117b7f8b603.jpg");
     background-size: 11rem;
     color: gold;
+    transform: translate(30px 30px);
 }
 
 #caja2
@@ -48,7 +49,9 @@
     color: gold;
 }
 
-#caja3 {grid-area: columna1; background-color:powderblue;}
+#caja3:hover {grid-area: columna1; background-color:powderblue;
+transform: scale(1.5);
+}
 #caja4
 {
   grid-area: columna2;
