@@ -32,13 +32,12 @@
     border: 2px solid black;
 }
 
-#caja1:hover
+#caja1
 {
     grid-area: menulat;
     background-image: url("https://i.pinimg.com/236x/08/ae/77/08ae7723ed2cb7e167352117b7f8b603.jpg");
     background-size: 11rem;
     color: gold;
-    transform: translate(30px 30px);
 }
 
 #caja2
@@ -49,12 +48,18 @@
     color: gold;
 }
 
-#caja3:hover {grid-area: columna1; background-color:powderblue;
-transform: scale(1.5);
+#caja3
+{
+    grid-area: columna1; background-color:powderblue;
+    
 }
 #caja4
 {
   grid-area: columna2;
   color:khaki;
 }
-#caja5 {grid-area: piepagina;}
+#caja5:hover 
+{
+    grid-area: piepagina;
+    transform: scale(1.5);
+}
