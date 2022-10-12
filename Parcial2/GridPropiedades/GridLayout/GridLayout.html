@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GridLayout.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cont" class="contenedor">
+        <div id="caja1" class="caja"><h1>Top Canciones:</h1> <h3><br>- Goteo <br><br>- Si quieren frontear <br><br>- Loca <br><br>- Givenchi <br><br>- Sold out dates <br><br>- Pintao <br><br>- Paris <br><br>- Party en el barrio</h3></div>
+        <div id="caja2" class="caja"> <br><h1>Mauro Ezquiel Lombardo Quiroga - 26 años</h1></div>
+        <div id="caja3" class="caja"><img src="duki.jpg" width="50%" height="100%"></div>
+        <div id="caja4" class="caja"><h2>Mejor Album:</h2> <br> <img src="album.jpg" width="80%" height="70%"> <br> <h2>Desde el fin del mundo</h2></div>
+        <div id="caja5" class="caja"><video src="DUKI - Goteo (Video Oficial).mp4" width="100%" height="100%" controls></video></div>
+    </div>
+
+    <script>
+        var elem =document.getElementById("idcontene");
+        elem.addEventListener("click", cambiarCaja);
+        function cambiarCaja (evento){
+            console.log(evento);
+            if(document.getElementById(evento.target.id).classList.contains("caja")) {
+                document.getElementById(evento.terget.id).classList.toggle("cajaAmarilla");
+            }
+        if(evento.target.id=="caja9")
+        {
+            elem.removeEventListener("click", cambiarCaja);
+        }
+        }
+    </script>
+
+
+</body>
+</html>
