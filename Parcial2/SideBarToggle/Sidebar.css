@@ -63,7 +63,7 @@ input:checked ~ .content
 */
 
 
-@media screen and (max-width: 1200px)
+@media screen 
 {
     div.sidebar
     {
@@ -76,11 +76,11 @@ input:checked ~ .content
     div.content {margin-left: 0; width: 100%;}
 }
 
-@media screen and (max-width: 600px)
+/*@media screen and (max-width: 600px)
 {
     .sidebar a
     {
         float: none;
         text-align: center;
     }
-}
+}*/
