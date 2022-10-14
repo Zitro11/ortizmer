@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="GridLayout.css">
     <title>Document</title>
+    <script src="./jquery-3.6.1.min.js"></script>
 </head>
 <body>
     <div id="cont" class="contenedor">
@@ -26,6 +27,16 @@
 
         function miFuncion1() {alert ("Click en boton 3 / Funcion 1");}
         function miFuncion2() {alert ('Click en boton 3 / Funcion 2');}
+
+
+        $(document).ready(function()
+        {
+            $("#miBoton4").click(function()
+            {
+                alert("se escucho el click en la libreria Jquery");
+            });
+        }
+        )
 
     </script>
 
