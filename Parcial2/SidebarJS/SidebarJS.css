@@ -14,7 +14,7 @@
 div.sidebar
 {
     position: static;
-    background-color: lightgray;
+    background-color:blanchedalmond;
     width: 200px;
     height: 100%;
     overflow: auto;
@@ -50,12 +50,12 @@ div.content
 
 
 
-/*input {display: none;}
+input {display: none;}
 
 input:checked + .sidebar
 {
    display: none;
-}*/
+}
 
 /*
 input:checked ~ .content
@@ -90,4 +90,10 @@ input:checked ~ .content
 .escondido
 {
     display : none;
+}
+
+#btnMenu
+{
+    background-color: aqua;
+    size: 30cm;
 }

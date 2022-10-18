@@ -1,10 +1,9 @@
-window.onload=function ()
+window.onload=function()
 {
-    document.getElementById("btnMenu").addEventListener("click",function() {
-        document.getElementById("barralat").classList
-        console.log("Click en el boton");
+    document.getElementById("btnMenu").addEventListener("click",function()
+    {
+        console.log("click en el boton, funcion de javascript realizada con exito");
 
-        document.getElementByIdClassName("sidebar",)[0].classList.Toggle("escondido");
-
+        document.getElementsByClassName("sidebar",)[0].classList.toggle("escondido");
     })
 }
