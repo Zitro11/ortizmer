@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   .form-register {
     width: 600px;
     background-color: transparent;
@@ -80,4 +80,11 @@ a:hover {
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
+  }
+
+  #Final
+  {
+    position:fixed;
+    left: 860px;
+    top: 920px;
   }
