@@ -84,7 +84,16 @@ a:hover {
 
   #Final
   {
-    position:fixed;
-    left: 860px;
-    top: 920px;
+  color: whitesmoke;
+  background-color: transparent;
+  font-family: fantasy;
+  font-size: 400%;
+  font-style: oblique;
+  text-align: center;
+  }
+
+  #Final:hover
+  {
+    background-color: #53212B;
+    color: wheat;
   }
