@@ -13,23 +13,28 @@
 formulario.addEventListener('submit', function(e){
   e.preventDefault();
   console.log("click");
-})*/ 
+})*/
+
+
+
+/* evento para escuchar el click
+
+  document.getElementById("BotonRegistro").addEventListener('click', function () {
+  console.log("clik en el boton registro")
+});*/
 
 
 window.onload = function(){
-  document.getElementById("btnAjax").addEventListener("click",pedirHeader);
-  document.getElementById("btnReset").addEventListener("click",iniciarHeader);
+  document.getElementById("btnRegistro").addEventListener("click",hacerRegistro);
 
-
-
-function pedirHeader()
+function hacerRegistro()
 {
   var solicitud= new XMLHttpRequest();
   solicitud.onreadystatechange = function()
   {
-    if(solicitud.readyState == 4 && solicitud.status==200)
+    if(solicitud.readyState == 4 && solicitud.status == 200)
     {
-      document.getElementById("registro").innerHTML = solicitud.responseText;
+      document.getElementById("h").innerHTML = solicitud.responseText;
     }
   };
  solicitud.open("GET", "01_cargarArchivo.txt", true);
@@ -38,14 +43,7 @@ function pedirHeader()
 
 function iniciarHeader()
 {
-  document.getElementById("registro").innerHTML = "<h2>Formulario</h2>";
+  document.getElementById("h").innerHTML = "<h2>Mensaje</h2>";
 }
 
 }
-
-
-
-
-/*document.getElementById("BotonRegistro").addEventListener('click', function () {
-  console.log("clik en el boton registro")
-});*/
