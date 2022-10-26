@@ -19,7 +19,7 @@ function pedirHeader()
 
 function iniciarHeader()
 {
-  document.getElementById("h").innerHTML = "<h2>Mensaje</h2>";
+  document.getElementById("h").innerHTML = "<h4>Mensaje REGRESADO</h4>";
 }
 
 }
