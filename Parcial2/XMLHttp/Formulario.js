@@ -13,7 +13,7 @@ function pedirHeader()
       document.getElementById("h").innerHTML = solicitud.responseText;
     }
   };
- solicitud.open('GET', '01_cargarArchivo.txt', true);
+ solicitud.open("GET", "01_cargarArchivo.txt", true);
  solicitud.send();
 }
 
