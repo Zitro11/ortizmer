@@ -37,6 +37,19 @@ h4 {
     font-size: 18px;
     color: white;
   }
+
+.text
+{
+  width: 100%;
+  background: #53212B;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #000000;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
   
 p {
     height: 40px;
