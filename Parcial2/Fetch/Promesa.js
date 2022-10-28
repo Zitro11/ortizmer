@@ -3,5 +3,5 @@ document.getElementById('Boton').addEventListener('click',function(){HacerPetici
     {
         fetch("https://dog.ceo/api/breeds/image/random")
         .then( respuesta => respuesta.json()) 
-        .then( datos => document.getElementById('Imagen').src = datos.message) 
+        .then( datos => document.getElementById('Imagen').src = datos.message)
     } 
