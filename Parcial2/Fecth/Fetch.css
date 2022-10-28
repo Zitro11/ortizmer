@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121a25;
+    margin: 0;
+    font-family: 'Cute Font', cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #f4eb9c;
+    letter-spacing: 1px; 
+    text-align: center;
+  }
+
+  h1:hover {
+    color: #20dba1;
+    cursor: pointer;
+    letter-spacing: 10px; 
+    size: 100px;
+    
+  }
+  
+  .header {
+    margin-top: 8px;
+  }
+  
+  .container {
+    background-color: #1fbfd7;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;  
+    border-radius: 8px;
+    border: 10px solid #000000;
+  }
+
+  .container:hover{
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #120907, -8px -8px 8px #120907, 8px -8px 8px #120907, -8px 8px 8px #120907;
+    background-image: url(fondo.jpg);
+  }
+  
+  .images, .buttons  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    flex-wrap: wrap; 
+    width: 100%;  
+  }
+  
+  #Boton {
+    margin: 10px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    outline: none;  
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: 600;
+    color: #20dba1;
+    background-color: #f4eb9c;
+  }
+  
+  #Boton:hover {
+    color: #f4eb9c;
+    background-color: #20dba1;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
