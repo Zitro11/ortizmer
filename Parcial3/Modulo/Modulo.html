@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <label for="cad">Teclee una cadena</label>
+    <input id="cad" type="text">
+    <button id="Btn">Procesar</button>
+    <input id="cadM" type="text" disabled>
+
+    
+    <!--IMPORT ESTATICO SOLAMENTE LO NECESARIO-->
+    <!--
+    <script type="module">
+        import{pasarMayusculas,obtenerLongitud} from "./Modulo.js"
+
+        document.getElementById("Btn").addEventListener("click", function() {
+
+            let varCad = document.getElementById("cad").value
+            let varCadMay = pasarMayusculas(value);
+
+            document.getElementById("cadM").value=varCadMay;
+
+        });
+    </script>
+    -->
+
+
+
+    <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
+    
+    <script type="module">
+    import * as funciones from "./Modulo.js";
+
+    document.getElementById("Btn").addEventListener("click", function() {
+
+    let varCad = document.getElementById("cad").value
+    let varCadMay = funciones.pasarMayusculas(varCad);
+    document.getElementById("cadM").value=varCadMay;
+
+    let varLong = document.getElementById("cad").value
+    let varsinLong = funciones.quitarEspacios(varLong);
+    document.getElementById("cadM").value=varsinLong;
+
+    });
+    </script>
+    
+
+
+    <!--IMPORT DINÁMICO: SOLAMENTE LO CARGA EN CASO DE NECESITARLO, POR EJEMPLO, EL CLICK DEL USUARIO-->
+    <!--
+        <script type="module">
+    document.getElementById("Btn").addEventListener("click", function() {
+
+    import("./Modulo.js").then(function(funciones){
+    let varCad = document.getElementById("cad").value;
+    let varCadMay = funciones.pasarMayusculas(varCad);
+
+    document.getElementById("cadM").value=varCadMay;
+    })
+    });
+    </script>
+    -->
+
+</body>
+</html>
