@@ -8,10 +8,18 @@
 
 </head>
 <body>
-    <label for="cad">Teclee una cadena</label>
-    <input id="cad" type="text">
-    <button id="Btn">Procesar</button>
-    <input id="cadM" type="text" disabled>
+
+    <!--Cadena en mayusculas-->
+    <label for="cadena1">Teclee una cadena</label>
+    <input id="cadena1" type="text">
+    <button id="btnMayusculas">Procesar</button>
+    <input id="cadMayuscula" type="text" disabled>
+
+    <!--Cadena sin espacios-->
+    <label for="cadena2">Teclee una cadena</label>
+    <input id="cadena2" type="text">
+    <button id="btnSinEspacios">Procesar</button>
+    <input id="cadSinEspacios" type="text" disabled>
 
     
     <!--IMPORT ESTATICO SOLAMENTE LO NECESARIO-->
@@ -31,23 +39,23 @@
     -->
 
 
-
     <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
     
     <script type="module">
-    import * as funciones from "./Modulo.js";
+        import * as funciones from "./Modulo.js";
 
-    document.getElementById("Btn").addEventListener("click", function() {
+        document.getElementById("btnMayusculas").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena1").value
+        let varCadMay = funciones.pasarMayusculas(varCad);
+        document.getElementById("cadMayuscula").value=varCadMay;
+        });
 
-    let varCad = document.getElementById("cad").value
-    let varCadMay = funciones.pasarMayusculas(varCad);
-    document.getElementById("cadM").value=varCadMay;
+        document.getElementById("btnSinEspacios").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena2").value
+        let varCadSinEspacios = funciones.quitarEspacios(varCad);
+        document.getElementById("cadSinEspacios").value=varCadSinEspacios;
+        });
 
-    let varLong = document.getElementById("cad").value
-    let varsinLong = funciones.quitarEspacios(varLong);
-    document.getElementById("cadM").value=varsinLong;
-
-    });
     </script>
     
 
