@@ -11,6 +11,7 @@
 
     <!--Cadena en mayusculas-->
     <div>
+    <h2>Regresa la cadena en mayusculas</h2>
     <label for="cadena1">Teclee una cadena</label>
     <input id="cadena1" type="text">
     <button id="btnMayusculas">Procesar</button>
@@ -19,6 +20,7 @@
 
     <!--Cadena sin espacios-->
     <div>
+    <h2>Regresa la cadena sin espacios</h2>
     <label for="cadena2">Teclee una cadena</label>
     <input id="cadena2" type="text">
     <button id="btnSinEspacios">Procesar</button>
@@ -32,23 +34,6 @@
         <button id="btnLongitud">Procesar</button>
         <input id="cadLongitud" type="text" placeholder="Longitud de cadena:" disabled>
     </div>
-        
-    
-    <!--IMPORT ESTATICO SOLAMENTE LO NECESARIO-->
-    <!--
-    <script type="module">
-        import{pasarMayusculas,obtenerLongitud} from "./Modulo.js"
-
-        document.getElementById("Btn").addEventListener("click", function() {
-
-            let varCad = document.getElementById("cad").value
-            let varCadMay = pasarMayusculas(value);
-
-            document.getElementById("cadM").value=varCadMay;
-
-        });
-    </script>
-    -->
 
 
     <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
@@ -76,6 +61,24 @@
 
     </script>
     
+
+
+    <!--IMPORT ESTATICO SOLAMENTE LO NECESARIO-->
+    <!--
+    <script type="module">
+        import{pasarMayusculas,obtenerLongitud} from "./Modulo.js"
+
+        document.getElementById("Btn").addEventListener("click", function() {
+
+            let varCad = document.getElementById("cad").value
+            let varCadMay = pasarMayusculas(value);
+
+            document.getElementById("cadM").value=varCadMay;
+
+        });
+    </script>
+    -->
+
 
 
     <!--IMPORT DINÁMICO: SOLAMENTE LO CARGA EN CASO DE NECESITARLO, POR EJEMPLO, EL CLICK DEL USUARIO-->
