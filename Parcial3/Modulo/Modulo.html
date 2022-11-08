@@ -9,20 +9,28 @@
 </head>
 <body>
 
-    <div>
     <!--Cadena en mayusculas-->
+    <div>
     <label for="cadena1">Teclee una cadena</label>
     <input id="cadena1" type="text">
     <button id="btnMayusculas">Procesar</button>
-    <input id="cadMayuscula" type="text" disabled>
+    <input id="cadMayuscula" type="text" placeholder="Cadena en mayusculas:" disabled>
     </div>
 
-    <div>
     <!--Cadena sin espacios-->
+    <div>
     <label for="cadena2">Teclee una cadena</label>
     <input id="cadena2" type="text">
     <button id="btnSinEspacios">Procesar</button>
-    <input id="cadSinEspacios" type="text" disabled>
+    <input id="cadSinEspacios" type="text" placeholder="Quitador de espacios:" disabled>
+    </div>
+
+    <!--Cadena longitud-->
+    <div>
+        <label for="cadena3">Teclee una cadena</label>
+        <input id="cadena3" type="text">
+        <button id="btnLongitud">Procesar</button>
+        <input id="cadLongitud" type="text" placeholder="Longitud de cadena:" disabled>
     </div>
         
     
@@ -58,6 +66,12 @@
         let varCad = document.getElementById("cadena2").value
         let varCadSinEspacios = funciones.quitarEspacios(varCad);
         document.getElementById("cadSinEspacios").value=varCadSinEspacios;
+        });
+
+        document.getElementById("btnLongitud").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena3").value
+        let varCadLong = funciones.obtenerLongitud(varCad);
+        document.getElementById("cadLongitud").value=varCadLong;
         });
 
     </script>
