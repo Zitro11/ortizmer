@@ -1,5 +1,6 @@
 const cuadrado = (valor) => { return valor * valor};
 
+const pasarMayusculas = (cadena) => { return cadena.toUpperCase()};
 
 //console.log (module);
 
@@ -7,3 +8,4 @@ const cuadrado = (valor) => { return valor * valor};
 
 exports.cuadrado = cuadrado;
 
+exports.pasarMayusculas = pasarMayusculas;
