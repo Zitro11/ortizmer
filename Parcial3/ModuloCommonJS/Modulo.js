@@ -1,10 +1,5 @@
 const cuadrado = (valor) => { return valor * valor};
 
-function obtenerLongitud(cadena)
-{
-    return cadena.length;
-}
-
 
 //console.log (module);
 
