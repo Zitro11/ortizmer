@@ -8,12 +8,61 @@
 
 </head>
 <body>
-    <label for="cad">Teclee una cadena</label>
-    <input id="cad" type="text">
-    <button id="Btn">Procesar</button>
-    <input id="cadM" type="text" disabled>
 
+    <!--Cadena en mayusculas-->
+    <div>
+    <h2>Regresa la cadena en mayusculas</h2>
+    <label for="cadena1">Teclee una cadena</label>
+    <input id="cadena1" type="text">
+    <button id="btnMayusculas">Procesar</button>
+    <input id="cadMayuscula" type="text" placeholder="Cadena en mayusculas:" disabled>
+    </div>
+
+    <!--Cadena sin espacios-->
+    <div>
+    <h2>Regresa la cadena sin espacios</h2>
+    <label for="cadena2">Teclee una cadena</label>
+    <input id="cadena2" type="text">
+    <button id="btnSinEspacios">Procesar</button>
+    <input id="cadSinEspacios" type="text" placeholder="Quitador de espacios:" disabled>
+    </div>
+
+    <!--Cadena longitud-->
+    <div>
+        <label for="cadena3">Teclee una cadena</label>
+        <input id="cadena3" type="text">
+        <button id="btnLongitud">Procesar</button>
+        <input id="cadLongitud" type="text" placeholder="Longitud de cadena:" disabled>
+    </div>
+
+
+    <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
     
+    <script type="module">
+        import * as funciones from "./Modulo.js";
+
+        document.getElementById("btnMayusculas").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena1").value
+        let varCadMay = funciones.pasarMayusculas(varCad);
+        document.getElementById("cadMayuscula").value=varCadMay;
+        });
+
+        document.getElementById("btnSinEspacios").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena2").value
+        let varCadSinEspacios = funciones.quitarEspacios(varCad);
+        document.getElementById("cadSinEspacios").value=varCadSinEspacios;
+        });
+
+        document.getElementById("btnLongitud").addEventListener("click", function() {
+        let varCad = document.getElementById("cadena3").value
+        let varCadLong = funciones.obtenerLongitud(varCad);
+        document.getElementById("cadLongitud").value=varCadLong;
+        });
+
+    </script>
+    
+
+
     <!--IMPORT ESTATICO SOLAMENTE LO NECESARIO-->
     <!--
     <script type="module">
@@ -30,26 +79,6 @@
     </script>
     -->
 
-
-
-    <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
-    
-    <script type="module">
-    import * as funciones from "./Modulo.js";
-
-    document.getElementById("Btn").addEventListener("click", function() {
-
-    let varCad = document.getElementById("cad").value
-    let varCadMay = funciones.pasarMayusculas(varCad);
-    document.getElementById("cadM").value=varCadMay;
-
-    let varLong = document.getElementById("cad").value
-    let varsinLong = funciones.quitarEspacios(varLong);
-    document.getElementById("cadM").value=varsinLong;
-
-    });
-    </script>
-    
 
 
     <!--IMPORT DINÁMICO: SOLAMENTE LO CARGA EN CASO DE NECESITARLO, POR EJEMPLO, EL CLICK DEL USUARIO-->
