@@ -5,39 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Modulo.css">
 
 </head>
 <body>
 
+    <h1 id="Banner">M O D U L O S</h1>
+
     <!--Cadena en mayusculas-->
-    <div>
-    <h2>Regresa la cadena en mayusculas</h2>
-    <label for="cadena1">Teclee una cadena</label>
-    <input id="cadena1" type="text">
-    <button id="btnMayusculas">Procesar</button>
-    <input id="cadMayuscula" type="text" placeholder="Cadena en mayusculas:" disabled>
-    </div>
+    <section class="Mayusculas">
+        <div>
+        <h2 id="hMayusculas">Regresa la cadena en mayusculas</h2>
+        <label for="cadena1">Teclee una cadena</label>
+        <input id="cadena1" type="text">
+        <button id="btnMayusculas">Procesar</button>
+        <input id="cadMayuscula" type="text" placeholder="Cadena en mayusculas:" disabled>
+        </div>
+    </section>
 
     <!--Cadena sin espacios-->
-    <div>
-    <h2>Regresa la cadena sin espacios</h2>
-    <label for="cadena2">Teclee una cadena</label>
-    <input id="cadena2" type="text">
-    <button id="btnSinEspacios">Procesar</button>
-    <input id="cadSinEspacios" type="text" placeholder="Quitador de espacios:" disabled>
-    </div>
+    <section class="SinEspacios">
+        <div>
+        <h2 id="hSinEspacios">Regresa la cadena sin espacios</h2>
+        <label for="cadena2">Teclee una cadena</label>
+        <input id="cadena2" type="text">
+        <button id="btnSinEspacios">Procesar</button>
+        <input id="cadSinEspacios" type="text" placeholder="Quitador de espacios:" disabled>
+        </div>
+    </section>
 
     <!--Cadena longitud-->
-    <div>
-        <label for="cadena3">Teclee una cadena</label>
-        <input id="cadena3" type="text">
-        <button id="btnLongitud">Procesar</button>
-        <input id="cadLongitud" type="text" placeholder="Longitud de cadena:" disabled>
-    </div>
+    <section class="Longitud">
+        <div>
+            <h2 id="hLongitud">Regresa la longitud de la cadena</h2>
+            <label for="cadena3">Teclee una cadena</label>
+            <input id="cadena3" type="text">
+            <button id="btnLongitud">Procesar</button>
+            <input id="cadLongitud" type="text" placeholder="Longitud de cadena:" disabled>
+        </div>
+    </section>
 
 
     <!--IMPORT ESTATICO: CARGANDO TODO LO QUE OFRECE EL MODULO-->
-    
     <script type="module">
         import * as funciones from "./Modulo.js";
 

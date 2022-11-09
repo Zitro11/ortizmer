@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background: url("https://th.bing.com/th/id/R.414158ac6ca1a2cb7fa0e2c92dce8570?rik=PokRdLaGncFv2w&riu=http%3a%2f%2fmaxpeed.com%2fwp-content%2fuploads%2f2013%2f07%2ffondo-claro.jpg&ehk=nzbS%2bC1MkdBKkDQ5ckgk03Xn4YvlEO0eFwJn5N6dWY4%3d&risl=&pid=ImgRaw&r=0");
+}
+
+section{
+    width: 600px;
+    background-color: #F2EDD7;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-family: 'Arial';
+    color: #3A6351;
+    box-shadow: 7px 13px 37px black;
+}
+
+section:hover {
+    background-color: #3A6351;
+    color: #F2EDD7;
+    border: 2px solid #000000;
+}
+  
+h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+label{
+    font-family: 'Arial';
+    font-size: 20px;
+}
+  
+input {
+    width: 100%;
+    background: #A0937D;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #146356;
+  }
+
+input:hover{
+    background-color: #c5a66fa9;
+}
+  
+  
+button {
+    width: 100%;
+    background: #5F939A;
+    border: 1px solid #000000;
+    padding: 12px;
+    color: #F2EDD7;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+button:hover{
+    color: #5F939A;
+    cursor: pointer;
+    background: #F2EDD7;
+  }
+
+
+  #Banner
+  {
+  color: #5F939A;
+  background-color: #F2EDD7;
+  font-family: fantasy;
+  font-size: 400%;
+  font-style: oblique;
+  text-align: center;
+  }
+
+  #Banner:hover
+  {
+    background-color: #5F939A;
+    color: #F2EDD7;
+  }
