@@ -23,17 +23,21 @@
   <!--INICIO DEL FORMULARIO-->
   <div class="form-register" id="registro">
 
-      <!--TITULO-->
-      <h4 id="form">Formulario Registro</h4>
-
+    <!--TITULO-->
+    <div class="row">
+      <div class="col-md-12">
+        <h4 id="form">Formulario Registro</h4>
+      </div>
+    </div>
+    
     <div class="row">
 
       <!--ABRIMOS LA PRIMER COLUMNA-->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
 
         <!--PRIMER RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="nombres">Ingresa tu nombre</label>
             <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
           </div>
@@ -41,7 +45,7 @@
 
         <!--SEGUNDO RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="correo">Ingresa tu correo electronico</label>
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
           </div>
@@ -49,7 +53,7 @@
 
         <!--TERCER RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="usuario">Ingresa tu nombre de usuario</label>
             <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
           </div>
@@ -58,11 +62,11 @@
       </div>
 
       <!--ABRIMOS LA SEGUNDA COLUMNA-->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
 
         <!--PRIMER RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="apellidos">Ingresa tus apellidos</label>
             <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
           </div>
@@ -70,7 +74,7 @@
 
         <!--SEGUNDO RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="contraseña">Ingresa tu contraseña</label>
             <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
           </div>
@@ -78,7 +82,7 @@
 
         <!--PRIMER RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-5">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="genero">Selecciona tu genero</label>
             <select class="controls" name="Genero" id="genero">
               <option selected="selected">Hombre</option>
@@ -90,11 +94,11 @@
       </div>
 
       <!--ABRIMOS LA TERCERA COLUMNA-->
-      <div class="col-md-4">
+      <div class="col-sm-12 col-md-6 col-lg-4">
 
          <!--PRIMER RENGLON-->
          <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-2">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="telefono">Ingresa tu telefono</label>
             <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
             </select>
@@ -103,7 +107,7 @@
 
         <!--SEGUNDO RENGLON-->
         <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-2">
+          <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="fecha">Selecciona tu fecha de nacimiento</label>
             <input class="controls" type="date" id="fecha" name="trip-start" min="2001-01-01" max="2022-12-31">
           </div>
@@ -113,17 +117,17 @@
 
     </div>
 
+    <!--Parte baja del formulario-->
     <div class="row">
-
       <div class="col-md-12">
         <br></br>
         <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
         <button type="submit" class="botons" id="btnRegistro">Registrar</button>
       </div>
-
     </div>
 
   </div>
+  <!--FIN DEL FORMULARIO-->
 
 
   <script src="Formulario.js"></script>
