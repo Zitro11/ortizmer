@@ -24,7 +24,7 @@ formulario.addEventListener('submit', function(e){
 });*/
 
 
-window.onload = function(){
+/*window.onload = function(){
   document.getElementById("btnRegistro").addEventListener("click",hacerRegistro);
 
 function hacerRegistro()
@@ -46,4 +46,4 @@ function iniciarHeader()
   document.getElementById("h").innerHTML = "<h2>Mensaje</h2>";
 }
 
-}
+}*/
