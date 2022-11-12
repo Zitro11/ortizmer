@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
 
+  /* BANNER */
   #Final
   {
   color: whitesmoke;
@@ -20,12 +21,13 @@
     color: wheat;
   }
 
+  /* FORMULARIO */
   .form-register {
-    width: 80%;
+    width: 70%;
     background-color: transparent;
-    padding: 50px;
+    padding: 40px;
     margin: auto;
-    margin-top: 170px;
+    margin-top: 120px;
     border-radius: 40px;
     font-family: 'calibri';
     color: #FFFBF5;
@@ -33,47 +35,66 @@
   }
 
   .form-register:hover {
-    background-color: #FD4556;
+    background-color: #fd4557ad;
     border: 2px solid #000000;
   }
   
+  /* TITULO FORMULARIO */
 h4 {
-    font-size: 25px;
-    margin-bottom: 20px;
+    text-align: center;
   }
   
-  .controls {
+  /* CONTROLES DEL FORMULARIO */
+.controls {
     width: 100%;
     background: #53212B;
-    padding: 10px;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 10px;
     margin-bottom: 16px;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     font-family: 'calibri';
-    font-size: 18px;
+    font-size: 20px;
     color: white;
   }
 
+  /* BOTONES */
+  .botons {
+    width: 100%;
+    background: #53212B;
+    border: 2px solid #000000;
+    padding: 15px;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+    #btnRegistro:hover
+  {
+    color: #000000;
+    cursor: pointer;
+    background: rgba(252, 224, 173, 0.822);
+  }
+
+  /* TEXTO DEL FORMULARIO */
 .text
 {
   width: 100%;
-  background: #53212B;
   padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #000000;
+  margin-bottom: 10px;
   font-family: 'calibri';
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
   
+  /* TERMINOS Y CONDICIONES */
 p {
     height: 40px;
     text-align: center;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
   }
   
+  /* LINKS */
 a {
     color: white;
     text-decoration: none;
@@ -83,24 +104,8 @@ a:hover {
     color: white;
     text-decoration: underline;
   }
-  
-.botons {
-    width: 100%;
-    background: #53212B;
-    border: 1px solid #000000;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-  }
 
-    #btnRegistro:hover
-  {
-    color: #000000;
-    cursor: pointer;
-    background: #FFFBF5;
-  }
-
+  /* VIDEO */
   video {
     position:fixed;
     right: 0;

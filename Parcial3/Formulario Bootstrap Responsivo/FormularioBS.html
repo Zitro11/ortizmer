@@ -23,13 +23,14 @@
   <!--INICIO DEL FORMULARIO-->
   <div class="form-register" id="registro">
 
-    <!--TITULO-->
+    <!--Parte alta del formulario-->
     <div class="row">
       <div class="col-md-12">
         <h4 id="form">Formulario Registro</h4>
       </div>
     </div>
     
+    <!--Parte media del formulario-->
     <div class="row">
 
       <!--ABRIMOS LA PRIMER COLUMNA-->
@@ -38,7 +39,7 @@
         <!--PRIMER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="nombres">Ingresa tu nombre</label>
+            <label for="nombres" class="text">Ingresa tu nombre</label>
             <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
           </div>
         </div>
@@ -46,7 +47,7 @@
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="correo">Ingresa tu correo electronico</label>
+            <label for="correo" class="text">Ingresa tu correo electronico</label>
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
           </div>
         </div>
@@ -54,7 +55,7 @@
         <!--TERCER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="usuario">Ingresa tu nombre de usuario</label>
+            <label for="usuario" class="text">Ingresa tu nombre de usuario</label>
             <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
           </div>
         </div>
@@ -67,7 +68,7 @@
         <!--PRIMER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="apellidos">Ingresa tus apellidos</label>
+            <label for="apellidos" class="text">Ingresa tus apellidos</label>
             <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
           </div>
         </div>
@@ -75,15 +76,15 @@
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="contraseña">Ingresa tu contraseña</label>
+            <label for="contraseña" class="text">Ingresa tu contraseña</label>
             <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
           </div>
         </div>
 
-        <!--PRIMER RENGLON-->
+        <!--TERCER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="genero">Selecciona tu genero</label>
+            <label for="genero" class="text">Selecciona tu genero</label>
             <select class="controls" name="Genero" id="genero">
               <option selected="selected">Hombre</option>
               <option>Mujer</option>
@@ -99,7 +100,7 @@
          <!--PRIMER RENGLON-->
          <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="telefono">Ingresa tu telefono</label>
+            <label for="telefono" class="text">Ingresa tu telefono</label>
             <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
             </select>
           </div>
@@ -108,7 +109,7 @@
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="fecha">Selecciona tu fecha de nacimiento</label>
+            <label for="fecha" class="text">Selecciona tu fecha de nacimiento</label>
             <input class="controls" type="date" id="fecha" name="trip-start" min="2001-01-01" max="2022-12-31">
           </div>
         </div>
@@ -121,8 +122,10 @@
     <div class="row">
       <div class="col-md-12">
         <br></br>
-        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
         <button type="submit" class="botons" id="btnRegistro">Registrar</button>
+        <input type="checkbox" id="chBox" value="terminos">
+        <label for="chBox" ><p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p></label>
+        
       </div>
     </div>
 
