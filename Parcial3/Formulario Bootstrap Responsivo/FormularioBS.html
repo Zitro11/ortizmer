@@ -15,10 +15,13 @@
 
   <video src="cine.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
   <div>
-    <a title="Valorant" href="https://playvalorant.com/es-mx/?gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH4KywGgJ-awrSv4rCIw53AERkpnVNhOG2T3FFyqRV6ZEHnr6f0oEQwaAgMaEALw_wcB&gclsrc=aw.ds">
-      <h1 id="Final" class="text-center">V A L O R A N T</h1>
+      <h3 id="Final" class="text-center">V A L O R A N T</h1>
     </a>
   </div>
+  <div>
+    
+  </div>
+  
 
   <!--INICIO DEL FORMULARIO-->
   <div class="form-register" id="registro">
@@ -26,7 +29,7 @@
     <!--Parte alta del formulario-->
     <div class="row">
       <div class="col-md-12">
-        <h4 id="form">Formulario Registro</h4>
+        <h1 id="TituloFormulario">R E G I S T R A T E</h1>
       </div>
     </div>
     
@@ -39,24 +42,24 @@
         <!--PRIMER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="nombres" class="text">Ingresa tu nombre</label>
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <label for="nombres" class="text">Nombre</label>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ej. Mauro">
           </div>
         </div>
 
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="correo" class="text">Ingresa tu correo electronico</label>
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <label for="apellidos" class="text">Apellidos</label>
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ej. Lombardo">
           </div>
         </div>
 
         <!--TERCER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="usuario" class="text">Ingresa tu nombre de usuario</label>
-            <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
+            <label for="usuario" class="text">Usuario</label>
+            <input class="controls" type="text" name="usuario" id="usuario" placeholder="Ej. Duko123">
           </div>
         </div>
       
@@ -68,23 +71,23 @@
         <!--PRIMER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="apellidos" class="text">Ingresa tus apellidos</label>
-            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <label for="correo" class="text">Correo electronico</label>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ej. abdcejf@gmail.com">
           </div>
         </div>
 
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="contraseña" class="text">Ingresa tu contraseña</label>
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+            <label for="contraseña" class="text">Contraseña</label>
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="******">
           </div>
         </div>
 
         <!--TERCER RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="genero" class="text">Selecciona tu genero</label>
+            <label for="genero" class="text">Genero</label>
             <select class="controls" name="Genero" id="genero">
               <option selected="selected">Hombre</option>
               <option>Mujer</option>
@@ -95,13 +98,13 @@
       </div>
 
       <!--ABRIMOS LA TERCERA COLUMNA-->
-      <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="col-sm-12 col-md-12 col-lg-4">
 
          <!--PRIMER RENGLON-->
          <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="telefono" class="text">Ingresa tu telefono</label>
-            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+            <label for="telefono" class="text">Telefono</label>
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ej. 867 167 57 80">
             </select>
           </div>
         </div>
@@ -109,7 +112,7 @@
         <!--SEGUNDO RENGLON-->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <label for="fecha" class="text">Selecciona tu fecha de nacimiento</label>
+            <label for="fecha" class="text">Fecha de nacimiento</label>
             <input class="controls" type="date" id="fecha" name="trip-start" min="2001-01-01" max="2022-12-31">
           </div>
         </div>
@@ -122,10 +125,11 @@
     <div class="row">
       <div class="col-md-12">
         <br></br>
-        <button type="submit" class="botons" id="btnRegistro">Registrar</button>
         <input type="checkbox" id="chBox" value="terminos">
-        <label for="chBox" ><p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p></label>
-        
+        <label for="chBox"><p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a>.</p></label>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="botons" id="btnRegistro">Registrar</button>
       </div>
     </div>
 
