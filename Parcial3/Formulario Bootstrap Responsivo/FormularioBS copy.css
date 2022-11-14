@@ -52,9 +52,9 @@
   /* TITULO FORMULARIO */
 #TituloFormulario {
   margin-top: 5px;
-  color: wheat;
-  font-family: fantasy;
-  font-size: 276%;
+  color: rgb(248, 218, 161);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
   text-align: center;
   }
   
@@ -67,7 +67,7 @@
     margin-bottom: 16px;
     border: 2px solid #000000;
     font-family: 'calibri';
-    font-size: 20px;
+    font-size: 17px;
     color: white;
   }
 
@@ -96,7 +96,7 @@
   padding: 12px;
   margin-bottom: 7px;
   font-family: 'calibri';
-  font-size: 22px;
+  font-size: 30px;
   color: rgb(221, 241, 145);
 }
   
@@ -119,14 +119,5 @@ a:hover {
     text-decoration: underline;
   }
 
-  /* VIDEO */
-  video {
-    position:fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 105%;
-    min-height: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
-    z-index: -2;
-  }
+
 
