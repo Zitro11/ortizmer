@@ -5,10 +5,12 @@
   }
 
   body{
+  height: 100%;
   background-image: url(H.jpg);
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   height: 100%;
   }
 
@@ -61,7 +63,7 @@
   /* CONTROLES DEL FORMULARIO */
 .controls {
     width: 90%;
-    background: #ad152900;
+    background: #00000094;
     padding: 8px;
     border-radius: 15px;
     margin-bottom: 12px;
@@ -101,7 +103,7 @@
   margin-bottom: 7px;
   font-family: 'calibri';
   font-size: 30px;
-  color: rgb(238, 248, 196);
+  color: rgb(255, 255, 255);
 }
   
   /* TERMINOS Y CONDICIONES */
