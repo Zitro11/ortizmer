@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+
+#Izquierda{
+  background-color: #002b5c;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#Derecha{
+  background-image: url(Vuelo2.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#vacaciones{
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Introduccion */
+#Titulo {
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium';
+  color: #FFFBF5;
+  text-align: center;
+}
+
+#introduccion{
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-family: 'Comic Sans';
+  color: #FFFBF5;
+  text-align: center;
+}
+
+  /* FORMULARIO */
+  .form-register {
+    width: 75%;
+    background-color: rgba(3, 0, 32, 0.61);
+    padding: 25px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: #FFFBF5;
+    box-shadow: 7px 13px 37px black;
+  }
+  
+  /* TITULO FORMULARIO */
+#TituloFormulario {
+  margin-top: 5px;
+  color: #ffffff;
+  font-family: 'Rockwell';
+  font-size: 250%;
+  text-align: center;
+  }
+  
+  /* CONTROLES DEL FORMULARIO */
+.controls {
+    width: 90%;
+    background: #c5c5c5cb;
+    padding: 8px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #000000;
+    font-family: 'Palatino';
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .controls:hover{
+    background: #e2833556;
+  }
+
+  /* BOTONES */
+  .botons {
+    width: 100%;
+    background: #e67534c4;
+    border: 2px solid #000000;
+    padding: 15px;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+    #btnRegistro:hover
+  {
+    cursor: pointer;
+    background: #fa770b;
+  }
+
+  br + button{
+    width: 100%;
+    padding: 5px;
+    color: #ffffff;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  /* TEXTO DEL FORMULARIO */
+.text
+{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 7px;
+  font-family: 'calibri';
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+  
+  /* TERMINOS Y CONDICIONES */
+p {
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  /* LINKS */
+a {
+    color: white;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+
+
