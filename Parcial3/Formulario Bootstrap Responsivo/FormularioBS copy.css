@@ -38,7 +38,7 @@
   /* FORMULARIO */
   .form-register {
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.349);
     padding: 40px;
     margin: auto;
     margin-top: 100px;
@@ -53,7 +53,7 @@
 #TituloFormulario {
   margin-top: 5px;
   color: rgb(248, 218, 161);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bahnschrift SemiBold';
   font-size: 250%;
   text-align: center;
   }
@@ -97,7 +97,7 @@
   margin-bottom: 7px;
   font-family: 'calibri';
   font-size: 30px;
-  color: rgb(221, 241, 145);
+  color: rgb(237, 255, 163);
 }
   
   /* TERMINOS Y CONDICIONES */
