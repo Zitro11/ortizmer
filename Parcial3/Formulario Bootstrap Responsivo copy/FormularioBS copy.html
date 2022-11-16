@@ -15,8 +15,10 @@
 <body>
 
 
+
 <!--CREACION FORMULARIO-->
 <div>
+  <form id="formulario">
   <div class="row">
 
     <!--PARTE IZQUIERDA DEL FORMULARIO-->
@@ -31,7 +33,7 @@
 
       <div class="row">
         <div id="vacaciones" class="col-md-12">
-          <img class="ResponsiveImage" width="60%" src="vacaciones.png">
+          <img class="ResponsiveImage" width="60%" src="./fotos/vacaciones.png">
         </div>
       </div>
         
@@ -48,8 +50,7 @@
     </div>
     <!--FIN IZQUIERDA DEL FORMULARIO-->
 
-
-
+  
     <!--PARTE DERECHA DEL FORMULARIO-->
     <div id="Derecha" class="col-md-8">
       <!--INICIO DEL FORMULARIO-->
@@ -151,7 +152,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Origen" class="text">Origen</label>
-            <input class="controls" type="text" name="Origen" id="Origen" placeholder="Ej. Monterrey">
+            <input class="controls" type="text" name="Origen" id="origen" placeholder="Ej. Monterrey">
           </div>
         </div>
 
@@ -160,7 +161,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Destino" class="text">Destino</label>
-            <input class="controls" type="text" name="Destino" id="Destino" placeholder="Ej. Guadalajara">
+            <input class="controls" type="text" name="Destino" id="destino" placeholder="Ej. Guadalajara">
           </div>
         </div>  
       </div>
@@ -172,7 +173,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Aerolinea" class="text">Aerolinea</label>
-            <select class="controls" type="text" name="Aerolinea" id="Aerolinea">
+            <select class="controls" type="text" name="Aerolinea" id="aerolinea">
               <option>Qatar Airways</option>
               <option selected="selected">American Airlines</option>
               <option>Aeromexico</option>
@@ -184,7 +185,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Pasajeros" class="text">Pasajeros</label>
-            <input class="controls" type="number" min="1" max="6" name="Pasajeros" id="Personas" >
+            <input class="controls" type="number" min="1" max="6" name="Pasajeros" id="pasajeros" >
           </div>
         </div>
 
@@ -197,7 +198,7 @@
          <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Ida" class="text">Ida</label>
-            <input class="controls" type="date" id="Ida" name="trip-start" min="2022-11-01" max="2023-02-25">
+            <input class="controls" type="date" id="ida" name="trip-start" min="2022-11-01" max="2023-02-25">
           </div>
         </div>
 
@@ -205,7 +206,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
             <label for="Vuelta" class="text">Vuelta</label>
-            <input class="controls" type="date" id="Vuelta" name="trip-start" min="2022-11-02" max="2023-02-25">
+            <input class="controls" type="date" id="vuelta" name="trip-start" min="2022-11-02" max="2023-02-25">
           </div>
         </div>
 
@@ -230,8 +231,8 @@
     <div class="row">
       <div class="col-md-12">
         <!-- Button HTML (to Trigger Modal) -->
-        <a href="#myModal" role="button" data-bs-toggle="modal">
-          <button type="button" class="botons" id="btnRegistro">Reservar vuelo</button>
+        <a id="link" href="#myModal" role="button" data-bs-toggle="modal">
+          <button type="submit" class="botons" id="btnRegistro">Reservar vuelo</button>
         </a>
       </div>
     </div>
@@ -240,9 +241,13 @@
     <!--FIN DEL FORMULARIO-->
     </div>
     <!--FIN DERECHA DEL FORMULARIO-->
+  </form>
+
   </div>
 </div>
 <!--FIN CREACION FORMULARIO-->
+
+
 
 
 <!--CREACION MODAL-->
@@ -256,16 +261,29 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
               </div>
               <div class="modal-body">
-                  <p>Datos de la reserva:</p>
-                  <p class="text-secondary">
-                    <small>
-                      RESERVACION 1
-                    </small>
-                  </p>
+                      <small id="datosReserva">
+                        <p>Datos Reverva</p>
+                        <label for="NombreM">Nombre:</label> <label id="NombreM"></label>
+                        <br><label for="">Apellido:</label> <label id="ApellidoM"></label>
+                        <br><label for="">Correo:</label> <label id="CorreoM"></label>
+                        <br><label for="">Genero:</label> <label id="GeneroM"></label>
+                        <br><label for="">Telefono:</label> <label id="TelefonoM"></label>
+                        <br><label for="">Nacimiento:</label> <label id="NacimientoM"></label>
+                      </small>
+
+                      <small id="datosVuelo">
+                        <p>Datos Vuelo</p>
+                        <br><label for="">Origen:</label> <label id="OrigenM"></label>
+                        <br><label for="">Destino:</label> <label id="DestinoM"></label>
+                        <br><label for="">Aerolinea:</label> <label id="AerolineaM"></label>
+                        <br><label for="">Pasajeros:</label> <label id="PasajerosM"></label>
+                        <br><label for="">Ida:</label> <label id="IdaM"></label>
+                        <br><label for="">Vuelta:</label> <label id="VueltaM"></label>
+                      </small>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
               </div>
           </div>
       </div>
@@ -275,11 +293,10 @@
 
 
 <!--CREACION TOAST-->
-
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <img src="azafata.jpg" width="10%" class="rounded me-2">
+      <img src="./fotos/azafata.jpg" width="10%" class="rounded me-2">
       <strong class="me-auto">Bootstrap</strong>
       <small>Just Now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>

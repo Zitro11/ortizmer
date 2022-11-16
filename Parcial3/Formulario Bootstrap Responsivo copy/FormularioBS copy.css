@@ -14,7 +14,7 @@
 }
 
 #Derecha{
-  background-image: url(Vuelo2.jpg);
+  background-image: url(./fotos/Vuelo2.jpg);
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
@@ -88,7 +88,7 @@
   }
 
   .controls:hover{
-    background: #e2833556;
+    background: #ffffffe7;
   }
 
   /* BOTONES */
