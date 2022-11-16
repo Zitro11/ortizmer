@@ -39,10 +39,6 @@ boton.addEventListener('click' , function(e){
 })
 
 
-
-
-
-
 //CODIGO DEL TOAST//
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
