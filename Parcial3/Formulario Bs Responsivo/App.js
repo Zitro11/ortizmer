@@ -1,5 +1,5 @@
 
-//Datos formulario a modal
+//Datos formulario a modal//
 const boton = document.querySelector('#btnRegistro');
 boton.addEventListener('click' , function(e){
   e.preventDefault();
@@ -37,7 +37,7 @@ boton.addEventListener('click' , function(e){
   //console.log(Nombre,Apellido,Correo,Genero,Telefono,Nacimiento);
 
 })
-
+//Fin Datos formulario a modal//
 
 //CODIGO DEL TOAST//
 var toastTrigger = document.getElementById('liveToastBtn')
@@ -49,3 +49,27 @@ if (toastTrigger) {
   })
 }
 //FIN CODIGO DEL TOAST//
+
+
+//CODIGO PARA LLENAR DATOS//
+document.getElementById("llenarCampos").addEventListener("click", function()
+        {
+        console.log("click");
+        fetch('App.php').then(respuesta => respuesta.json()).then(dato => console.log(dato));
+        function refrescar(reg)
+        {
+            document.getElementById("NombreM").value =reg.Nombre;
+            document.getElementById("ApellidM").value = reg.Apellido;
+            document.getElementById("CorreoM").value = reg.Correo;
+            document.getElementById("GeneroM").value = reg.Genero;
+            document.getElementById("TelefonoM").value = reg.Telefono;
+            document.getElementById("NacimientoM").value = reg.Nacimiento;
+            document.getElementById("OrigenM").value = reg.Origen;
+            document.getElementById("DestinoM").value = reg.Destino;
+            document.getElementById("AerolineaM").value = reg.Aero;
+            document.getElementById("PasajerosM").value = reg.Pasajeros;
+            document.getElementById("IdaM").value = reg.Ida;
+            document.getElementById("VueltaM").value = reg.Vuelta;
+        }
+        });
+//FIN CODIGO PARA LLENAR DATOS//
