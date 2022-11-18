@@ -55,7 +55,9 @@ if (toastTrigger) {
 document.getElementById("llenarCampos").addEventListener("click", function()
   {
     console.log("click");
-    fetch('App.php').then(respuesta => respuesta.json()).then(dato => console.log(dato));
+    fetch('./App.php')
+      .then(respuesta => respuesta.json())
+      .then(data => console.log(data));
     function refrescar(reg)
       {
         document.getElementById("NombreM").value =reg.Nombre;
