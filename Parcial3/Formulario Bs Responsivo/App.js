@@ -5,12 +5,12 @@ boton.addEventListener('click' , function(e){
   e.preventDefault();
 
   //Datos personales
-  var Nombre = document.getElementById('nombres').value;
-  var Apellido = document.getElementById('apellidos').value;
-  var Correo = document.getElementById('correo').value;
-  var Genero = document.getElementById('genero').value;
-  var Telefono = document.getElementById('telefono').value;
-  var Nacimiento = document.getElementById('fecha').value;
+  var Nombre = document.getElementById('Nombres').value;
+  var Apellido = document.getElementById('Apellidos').value;
+  var Correo = document.getElementById('Correo').value;
+  var Genero = document.getElementById('Genero').value;
+  var Telefono = document.getElementById('Telefono').value;
+  var Nacimiento = document.getElementById('Fecha').value;
 
   document.getElementById('NombreM').innerHTML = Nombre;
   document.getElementById('ApellidoM').innerHTML = Apellido;
@@ -20,12 +20,12 @@ boton.addEventListener('click' , function(e){
   document.getElementById('NacimientoM').innerHTML = Nacimiento;
 
   //Datos vuelo
-  var Origen = document.getElementById('origen').value;
-  var Destino = document.getElementById('destino').value;
-  var Aero = document.getElementById('aerolinea').value;
-  var Pasajeros = document.getElementById('pasajeros').value;
-  var Ida = document.getElementById('ida').value;
-  var Vuelta = document.getElementById('vuelta').value;
+  var Origen = document.getElementById('Origen').value;
+  var Destino = document.getElementById('Destino').value;
+  var Aero = document.getElementById('Aerolinea').value;
+  var Pasajeros = document.getElementById('Pasajeros').value;
+  var Ida = document.getElementById('Ida').value;
+  var Vuelta = document.getElementById('Vuelta').value;
 
   document.getElementById('OrigenM').innerHTML = Origen;
   document.getElementById('DestinoM').innerHTML = Destino;

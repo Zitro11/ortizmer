@@ -11,6 +11,5 @@ $registro["Aero"] = "Aeromexico";
 $registro["Pasajeros"] = "1";
 $registro["Ida"] = "17/11/2022";
 $registro["Vuelta"] = "18/11/2022";
-
-echo json_decode($registro);
+echo json_encode($registro);
 ?>
