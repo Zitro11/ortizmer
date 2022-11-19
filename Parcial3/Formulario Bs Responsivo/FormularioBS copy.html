@@ -315,21 +315,21 @@
 
 <script>
         
-  document.getElementById("btn").addEventListener("click",async () =>{
+  document.getElementById("llenarCampos").addEventListener("click",async () =>{
   let respuesta= await fetch ('App.php');
   let dato =await respuesta.json();
-      document.getElementById("Nombres").value = reg.Nombres;
-      document.getElementById("Apellidos").value = reg.Apellidos;
-      document.getElementById("Correo").value = reg.Correo;
-      document.getElementById("Genero").value = reg.Genero;
-      document.getElementById("Telefono").value = reg.Telefono;
-      document.getElementById("Fecha").value = reg.Fecha;
-      document.getElementById("Origen").value = reg.Origen;
-      document.getElementById("Destino").value = reg.Destino;
-      document.getElementById("Aerolinea").value = reg.Aerolinea;
-      document.getElementById("Pasajeros").value = reg.Pasajeros;
-      document.getElementById("Ida").value = reg.Ida;
-      document.getElementById("Vuelta").value = reg.Vuelta;
+      document.getElementById("Nombres").value = dato.Nombre;
+      document.getElementById("Apellidos").value = dato.Apellido;
+      document.getElementById("Correo").value = dato.Correo;
+      document.getElementById("Genero").value = dato.Genero;
+      document.getElementById("Telefono").value = dato.Telefono;
+      document.getElementById("Fecha").value = dato.Fecha;
+      document.getElementById("Origen").value = dato.Origen;
+      document.getElementById("Destino").value = dato.Destino;
+      document.getElementById("Aerolinea").value = dato.Aerolinea;
+      document.getElementById("Pasajeros").value = dato.Pasajeros;
+      document.getElementById("Ida").value = dato.Ida;
+      document.getElementById("Vuelta").value = dato.Vuelta;
   });
 </script>
 
