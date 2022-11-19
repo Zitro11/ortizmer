@@ -28,7 +28,7 @@
         document.getElementById("btnTraer").addEventListener("click", async(event)=> {
           event.preventDefault();
           var datosFormulario = new FormData(document.getElementById("formulario"));
-          let respuesta = await fetch ('connect.php',{
+          let respuesta = await fetch ('FormData.php',{
             method : 'POST',
             body: datosFormulario
           })
