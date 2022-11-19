@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $basededatos = "ejemplo";
 $usuario = "root";
-$password = "";
+$password = "root";
 
 $con = mysqli_connect($servidor,$usuario,$password,$basededatos) or die ("No se conecto");
 $consulta = "select * from empleado";   
