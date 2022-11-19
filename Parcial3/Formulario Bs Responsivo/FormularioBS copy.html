@@ -313,6 +313,21 @@
 <!--FIN CREACION TOAST-->
 
 
+<script>
+  document.getElementById("btnTraer").addEventListener("click", async()=> {
+    var datosFormulario = new FormData(document.getElementById("formulario"));
+    let respuesta = await fetch ('connect.php',{
+      method : 'POST',
+      body: datosFormulario
+    })
+    let dato = await respuesta.json();
+
+    document.getElementById("idEmpleado").value = dato.idEmpleado;
+  })
+  
+
+</script>
+
 
 <script src="App.js"></script>
 

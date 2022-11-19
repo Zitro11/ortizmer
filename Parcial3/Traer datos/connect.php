@@ -1,12 +1,14 @@
 <?php
 
+$Nombre = $_POST['Nombre'];
+
 $servidor = "localhost";
 $basededatos = "ejemplo";
 $usuario = "root";
 $password = "";
 
 $con = mysqli_connect($servidor,$usuario,$password,$basededatos) or die ("No se conecto");
-$consulta = "select * from empleado";   
+$consulta = "select * from empleado WHERE Nombre=$Nombre";   
 
 $registros = mysqli_query($con,$consulta) or die ("Problema en el select");
 
@@ -23,12 +25,17 @@ while($reg = mysqli_fetch_array($registros,MYSQLI_NUM)) {
 }
 */
 
-//OBTIENE TODOS LOS REGISTROS DE LA CONSULTA CON UNA MATRIZ
+/*OBTIENE TODOS LOS REGISTROS DE LA CONSULTA CON UNA MATRIZ
 $result = mysqli_fetch_all($registros);
 var_dump($result);
 
 mysqli_close($con);
 echo json_encode($result);
+*/
+
+$result = mysqli_fetch_array($registros, MYSQLIASSOC);
+echo json_encode($result);
+
 
 //DBeaver//
 ?>
