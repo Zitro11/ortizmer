@@ -52,26 +52,20 @@ if (toastTrigger) {
 
 
 //CODIGO PARA LLENAR DATOS//
-document.getElementById("llenarCampos").addEventListener("click", function()
-  {
-    console.log("click");
-    fetch('./App.php')
-      .then(respuesta => respuesta.json())
-      .then(data => console.log(data));
-    function refrescar(reg)
-      {
-        document.getElementById("NombreM").value =reg.Nombre;
-        document.getElementById("ApellidM").value = reg.Apellido;
-        document.getElementById("CorreoM").value = reg.Correo;
-        document.getElementById("GeneroM").value = reg.Genero;
-        document.getElementById("TelefonoM").value = reg.Telefono;
-        document.getElementById("NacimientoM").value = reg.Nacimiento;
-        document.getElementById("OrigenM").value = reg.Origen;
-        document.getElementById("DestinoM").value = reg.Destino;
-        document.getElementById("AerolineaM").value = reg.Aero;
-        document.getElementById("PasajerosM").value = reg.Pasajeros;
-        document.getElementById("IdaM").value = reg.Ida;
-        document.getElementById("VueltaM").value = reg.Vuelta;
-      }
+document.getElementById("llenarCampos").addEventListener("click",async () =>{
+  let respuesta= await fetch ('App.php');
+  let dato =await respuesta.json();
+    document.getElementById("Nombres").value = dato.Nombre;
+    document.getElementById("Apellidos").value = dato.Apellido;
+    document.getElementById("Correo").value = dato.Correo;
+    document.getElementById("Genero").value = dato.Genero;
+    document.getElementById("Telefono").value = dato.Telefono;
+    document.getElementById("Fecha").value = dato.Fecha;
+    document.getElementById("Origen").value = dato.Origen;
+    document.getElementById("Destino").value = dato.Destino;
+    document.getElementById("Aerolinea").value = dato.Aerolinea;
+    document.getElementById("Pasajeros").value = dato.Pasajeros;
+    document.getElementById("Ida").value = dato.Ida;
+    document.getElementById("Vuelta").value = dato.Vuelta;
   });
 //FIN CODIGO PARA LLENAR DATOS//

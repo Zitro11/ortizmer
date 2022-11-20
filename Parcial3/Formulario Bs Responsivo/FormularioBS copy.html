@@ -312,28 +312,6 @@
 </div>
 <!--FIN CREACION TOAST-->
 
-
-<script>
-        
-  document.getElementById("llenarCampos").addEventListener("click",async () =>{
-  let respuesta= await fetch ('App.php');
-  let dato =await respuesta.json();
-      document.getElementById("Nombres").value = dato.Nombre;
-      document.getElementById("Apellidos").value = dato.Apellido;
-      document.getElementById("Correo").value = dato.Correo;
-      document.getElementById("Genero").value = dato.Genero;
-      document.getElementById("Telefono").value = dato.Telefono;
-      document.getElementById("Fecha").value = dato.Fecha;
-      document.getElementById("Origen").value = dato.Origen;
-      document.getElementById("Destino").value = dato.Destino;
-      document.getElementById("Aerolinea").value = dato.Aerolinea;
-      document.getElementById("Pasajeros").value = dato.Pasajeros;
-      document.getElementById("Ida").value = dato.Ida;
-      document.getElementById("Vuelta").value = dato.Vuelta;
-  });
-</script>
-
-
 <script src="App.js"></script>
 
 </body>
