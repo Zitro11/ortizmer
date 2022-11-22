@@ -39,6 +39,8 @@ boton.addEventListener('click' , function(e){
 })
 //Fin Datos formulario a modal//
 
+
+
 //CODIGO DEL TOAST//
 var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
