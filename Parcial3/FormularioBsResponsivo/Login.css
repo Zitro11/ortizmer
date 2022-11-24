@@ -1,5 +1,5 @@
 body {
-	background-image: url(/Parcial3/FormularioBsResponsivo/fotos/fLogin2.jpg);
+	background-image: url(./fotos/fLogin2.jpg);
 	background-size: cover;
   	background-repeat:no-repeat;
   	background-position: center center;
@@ -24,7 +24,7 @@ body {
 	width: 100%;
 	max-width: 525px;
 	min-height: 680px;
-	background-image: url(/Parcial3/FormularioBsResponsivo/fotos/Chica.png);
+	background-image: url(./fotos/Chica.png);
 	box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
 }
 
