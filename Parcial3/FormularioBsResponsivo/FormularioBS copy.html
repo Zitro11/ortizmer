@@ -15,6 +15,43 @@
 <body>
 
 
+<!--CREACION NAVBAR-->
+	<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+  <div class="container">
+    <a class="navbar-brand" href="./FormularioBS copy.html"><img src="./fotos/IconoAv.png" height="50" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#">Consultar Vuelo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#">Modificar Vuelo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#">Cancelar Vuelo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cuenta
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+            <li><a class="dropdown-item" href="#">Registrar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--FIN CREACION NAVBAR-->
+
 
 <!--CREACION FORMULARIO-->
 <div>
@@ -22,7 +59,7 @@
   <div class="row">
 
     <!--PARTE IZQUIERDA DEL FORMULARIO-->
-    <div id="Izquierda" class="col-md-4">
+    <div id="Izquierda" class="col-md-3">
 
       <!--Parte alta-->
       <div class="row">
@@ -43,7 +80,7 @@
       <div class="col-md-12">
         <br></br>
         <h2 id="introduccion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vel possimus cum accusamus distinctio perspiciatis perferendis. Sunt delectus magni optio 
-          accusantium provident corporis cum ad. Culpa voluptates similique esse inventore?</h2>
+          accusantium provident corporis cum ad. Culpa voluptates similique esse inventore? p</h2>
       </div>
     </div>
 
@@ -52,7 +89,7 @@
 
   
     <!--PARTE DERECHA DEL FORMULARIO-->
-    <div id="Derecha" class="col-md-8">
+    <div id="Derecha" class="col-md-9">
       <!--INICIO DEL FORMULARIO-->
     <div class="form-register" id="registro">
 
@@ -246,12 +283,9 @@
     </div>
     <!--FIN DERECHA DEL FORMULARIO-->
   </form>
-
   </div>
 </div>
 <!--FIN CREACION FORMULARIO-->
-
-
 
 
 <!--CREACION MODAL-->
@@ -300,7 +334,7 @@
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <img src="/Parcial3/FormularioBsResponsivo/fotos/azafata.jpg" width="10%" class="rounded me-2">
+      <img src="./fotos/azafata.jpg" width="10%" class="rounded me-2">
       <strong class="me-auto">Bootstrap</strong>
       <small>Just Now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
