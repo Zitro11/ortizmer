@@ -1,19 +1,20 @@
-/*document.getElementById('btnRegistrarse').addEventListener('click',function(e){
-    e.preventDefault();
+$(document).ready(function(){
 
-    window.location.href = "./Login.html";
-})*/
+    $('#btnIniciar').click(function(e) {
+        e.preventDefault();
+        try {
+            let Usuario = document.getElementById("Usuario").value;
+            let Contraseña = document.getElementById("Contraseña").value;
+            let Correo = document.getElementById("Correo").value;
 
-document.getElementById("btnRegistrarse").addEventListener("click", async(event)=> {
-    event.preventDefault();
-    var datosFormulario = new FormData(document.getElementById("form"));
-    let respuesta = await fetch ('Registro.php',{
-      method : 'POST',
-      body: datosFormulario
-    })
-    /*let dato = await respuesta.json();
-
-    document.getElementById("Usuario").value = dato.Usuario;
-    document.getElementById("Contraseña").value = dato.Contraseña;
-    document.getElementById("Correo").value = dato.Correo;*/
+            if (Usuario == "" || Contraseña == "" || Correo == "") {
+                swal("Error", "No deje campos vacios", "error");
+            } else {
+                $.post('./Registro.php',{Usuario, Contraseña, Correo},'json');
+                swal("Registrar cuenta","Se ha registrado tu cuenta correctamente","success");
+            }
+        } catch (exception) {
+            swal("Error","Ha ocurrido un error","error");
+        }
+    });
 });
