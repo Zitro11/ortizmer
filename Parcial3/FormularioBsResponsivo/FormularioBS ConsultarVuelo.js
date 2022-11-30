@@ -21,3 +21,20 @@ document.getElementById("llenarCampos").addEventListener("click", async(event)=>
     document.getElementById("Vuelta").value = dato.Vuelta;
 });
 
+async function TraerDatos(){
+  let headersList = { "Accept": "*/*"}
+
+  let response = await fetch("http://localhost/ortizmer/Parcial3/FormularioBsResponsivo/FormularioBS%20ConsultarVuelo2.php", { 
+    method: "GET",
+    headers: headersList
+  });
+
+  let datos = await response.json();
+
+  new gridjs.Grid({
+          columns: ["id", "Nombre", "Apellido", "Correo", "Genero", "Telefono", "Nacimiento", "Origen", "Destino",
+                    "Aerolinea", "Pasajeros", "Ida", "Vuelta",],
+          data: datos 
+          }).render(document.getElementById("wrapper"));
+}
+TraerDatos(); 
