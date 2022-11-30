@@ -6,14 +6,14 @@ boton.addEventListener('click' , function(e){
 
   //Datos personales
   var Nombre = document.getElementById('Nombre').value;
-  var Apellido = document.getElementById('Apellidos').value;
+  var Apellidos = document.getElementById('Apellidos').value;
   var Correo = document.getElementById('Correo').value;
   var Genero = document.getElementById('Genero').value;
   var Telefono = document.getElementById('Telefono').value;
   var Nacimiento = document.getElementById('Fecha').value;
 
   document.getElementById('NombreM').innerHTML = Nombre;
-  document.getElementById('ApellidoM').innerHTML = Apellido;
+  document.getElementById('ApellidoM').innerHTML = Apellidos;
   document.getElementById('CorreoM').innerHTML = Correo;
   document.getElementById('GeneroM').innerHTML = Genero;
   document.getElementById('TelefonoM').innerHTML = Telefono;
@@ -35,7 +35,16 @@ boton.addEventListener('click' , function(e){
   document.getElementById('VueltaM').innerHTML = Vuelta;
 
   document.getElementById('btnGuardarModal').addEventListener("click", async () =>{
-    swal("VUELO REGISTRADO", "VUELA PRONTO!", "success");
+    try{
+        $.post('FormularioBS copy.php', {vNombre:Nombre, vApellidos:Apellidos, vCorreo:Correo, vGenero:Genero, vTelefono:Telefono, vNacimiento:Nacimiento,
+                                         vOrigen:Origen, vDestino:Destino, vAero:Aerolinea, vPasajeros:Pasajeros, vIda:Ida, vVuelta:Vuelta},
+                                         {},'json');
+        swal("VUELO REGISTRADO", "VUELA PRONTO!", "success");
+    }
+    catch{
+
+    }
+    
   })
 
 })
