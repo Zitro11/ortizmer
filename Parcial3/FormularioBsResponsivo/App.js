@@ -67,10 +67,13 @@ if (toastTrigger) {
           || Ida == "" || Vuelta == "") 
           {
           swal("Error", "Favor de llenar todos los campos", "error");
+          btnRegistro.disabled = true;
       } 
       else {
         var toast = new bootstrap.Toast(toastLiveExample)
           toast.show()
+          let btnRegistro = document.getElementById("btnRegistro");
+          btnRegistro.disabled = false;
        }
       } 
     catch (exception) {
