@@ -5,7 +5,7 @@ boton.addEventListener('click' , function(e){
   e.preventDefault();
 
   //Datos personales
-  var Nombre = document.getElementById('Nombres').value;
+  var Nombre = document.getElementById('Nombre').value;
   var Apellido = document.getElementById('Apellidos').value;
   var Correo = document.getElementById('Correo').value;
   var Genero = document.getElementById('Genero').value;
@@ -60,18 +60,11 @@ if (toastTrigger) {
       let Pasajeros = document.getElementById("Pasajeros").value;
       let Ida = document.getElementById("Ida").value;
       let Vuelta = document.getElementById("Vuelta").value;
-      let Terminos = document.getElementById('chBox').checked;
-      if(Terminos.checked==true)
-      {
-        let TerminosV =1;
-      }
-      else{
-        let TerminosV =0;
-      }
+
 
       if (Nombre == "" || Apellidos == "" || Correo == "" || Telefono == ""
           || Fecha == "" || Origen == "" || Destino == "" || Pasajeros == ""
-          || Ida == "" || Vuelta == "" || Terminos==0) 
+          || Ida == "" || Vuelta == "") 
           {
           swal("Error", "Favor de llenar todos los campos", "error");
       } 
@@ -92,7 +85,7 @@ if (toastTrigger) {
 document.getElementById("llenarCampos").addEventListener("click",async () =>{
   let respuesta= await fetch ('App.php');
   let dato =await respuesta.json();
-    document.getElementById("Nombres").value = dato.Nombre;
+    document.getElementById("Nombre").value = dato.Nombre;
     document.getElementById("Apellidos").value = dato.Apellido;
     document.getElementById("Correo").value = dato.Correo;
     document.getElementById("Genero").value = dato.Genero;
