@@ -50,7 +50,7 @@ if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
     
     try {
-      let Nombre = document.getElementById("Nombres").value;
+      let Nombre = document.getElementById("Nombre").value;
       let Apellidos = document.getElementById("Apellidos").value;
       let Correo = document.getElementById("Correo").value;
       let Telefono = document.getElementById("Telefono").value;
@@ -71,7 +71,8 @@ if (toastTrigger) {
 
       if (Nombre == "" || Apellidos == "" || Correo == "" || Telefono == ""
           || Fecha == "" || Origen == "" || Destino == "" || Pasajeros == ""
-          || Ida == "" || Vuelta == "" || Terminos==0) {
+          || Ida == "" || Vuelta == "" || Terminos==0) 
+          {
           swal("Error", "Favor de llenar todos los campos", "error");
       } 
       else {
