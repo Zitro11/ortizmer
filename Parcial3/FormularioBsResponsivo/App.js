@@ -34,7 +34,9 @@ boton.addEventListener('click' , function(e){
   document.getElementById('IdaM').innerHTML = Ida;
   document.getElementById('VueltaM').innerHTML = Vuelta;
 
-  //console.log(Nombre,Apellido,Correo,Genero,Telefono,Nacimiento);
+  document.getElementById('btnGuardarModal').addEventListener("click", async () =>{
+    swal("VUELO REGISTRADO", "VUELA PRONTO!", "success");
+  })
 
 })
 //Fin Datos formulario a modal//
@@ -46,8 +48,40 @@ var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
 if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
+    
+    try {
+      let Nombre = document.getElementById("Nombres").value;
+      let Apellidos = document.getElementById("Apellidos").value;
+      let Correo = document.getElementById("Correo").value;
+      let Telefono = document.getElementById("Telefono").value;
+      let Fecha = document.getElementById("Fecha").value;
+      let Origen = document.getElementById("Origen").value;
+      let Destino = document.getElementById("Destino").value;
+      let Pasajeros = document.getElementById("Pasajeros").value;
+      let Ida = document.getElementById("Ida").value;
+      let Vuelta = document.getElementById("Vuelta").value;
+      let Terminos = document.getElementById('chBox').checked;
+      if(Terminos.checked==true)
+      {
+        let TerminosV =1;
+      }
+      else{
+        let TerminosV =0;
+      }
+
+      if (Nombre == "" || Apellidos == "" || Correo == "" || Telefono == ""
+          || Fecha == "" || Origen == "" || Destino == "" || Pasajeros == ""
+          || Ida == "" || Vuelta == "" || Terminos==0) {
+          swal("Error", "Favor de llenar todos los campos", "error");
+      } 
+      else {
+        var toast = new bootstrap.Toast(toastLiveExample)
+          toast.show()
+       }
+      } 
+    catch (exception) {
+      swal("Error","Ha ocurrido un error","error");
+      }
   })
 }
 //FIN CODIGO DEL TOAST//
