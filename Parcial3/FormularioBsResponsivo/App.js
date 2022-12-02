@@ -5,15 +5,15 @@ boton.addEventListener('click' , function(e){
   e.preventDefault();
 
   //Datos personales
-  var Nombre = document.getElementById('Nombres').value;
-  var Apellido = document.getElementById('Apellidos').value;
+  var Nombre = document.getElementById('Nombre').value;
+  var Apellidos = document.getElementById('Apellidos').value;
   var Correo = document.getElementById('Correo').value;
   var Genero = document.getElementById('Genero').value;
   var Telefono = document.getElementById('Telefono').value;
   var Nacimiento = document.getElementById('Fecha').value;
 
   document.getElementById('NombreM').innerHTML = Nombre;
-  document.getElementById('ApellidoM').innerHTML = Apellido;
+  document.getElementById('ApellidoM').innerHTML = Apellidos;
   document.getElementById('CorreoM').innerHTML = Correo;
   document.getElementById('GeneroM').innerHTML = Genero;
   document.getElementById('TelefonoM').innerHTML = Telefono;
@@ -34,7 +34,18 @@ boton.addEventListener('click' , function(e){
   document.getElementById('IdaM').innerHTML = Ida;
   document.getElementById('VueltaM').innerHTML = Vuelta;
 
-  //console.log(Nombre,Apellido,Correo,Genero,Telefono,Nacimiento);
+  document.getElementById('btnGuardarModal').addEventListener("click", async () =>{
+    try{
+        $.post('FormularioBS copy.php', {vNombre:Nombre, vApellidos:Apellidos, vCorreo:Correo, vGenero:Genero, vTelefono:Telefono, vNacimiento:Nacimiento,
+                                         vOrigen:Origen, vDestino:Destino, vAero:Aerolinea, vPasajeros:Pasajeros, vIda:Ida, vVuelta:Vuelta},
+                                         {},'json');
+        swal("VUELO REGISTRADO", "VUELA PRONTO!", "success");
+    }
+    catch{
+
+    }
+    
+  })
 
 })
 //Fin Datos formulario a modal//
@@ -46,8 +57,37 @@ var toastTrigger = document.getElementById('liveToastBtn')
 var toastLiveExample = document.getElementById('liveToast')
 if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-    toast.show()
+    
+    try {
+      let Nombre = document.getElementById("Nombre").value;
+      let Apellidos = document.getElementById("Apellidos").value;
+      let Correo = document.getElementById("Correo").value;
+      let Telefono = document.getElementById("Telefono").value;
+      let Fecha = document.getElementById("Fecha").value;
+      let Origen = document.getElementById("Origen").value;
+      let Destino = document.getElementById("Destino").value;
+      let Pasajeros = document.getElementById("Pasajeros").value;
+      let Ida = document.getElementById("Ida").value;
+      let Vuelta = document.getElementById("Vuelta").value;
+
+
+      if (Nombre == "" || Apellidos == "" || Correo == "" || Telefono == ""
+          || Fecha == "" || Origen == "" || Destino == "" || Pasajeros == ""
+          || Ida == "" || Vuelta == "") 
+          {
+          swal("Error", "Favor de llenar todos los campos", "error");
+          btnRegistro.disabled = true;
+      } 
+      else {
+        var toast = new bootstrap.Toast(toastLiveExample)
+          toast.show()
+          let btnRegistro = document.getElementById("btnRegistro");
+          btnRegistro.disabled = false;
+       }
+      } 
+    catch (exception) {
+      swal("Error","Ha ocurrido un error","error");
+      }
   })
 }
 //FIN CODIGO DEL TOAST//
@@ -57,7 +97,7 @@ if (toastTrigger) {
 document.getElementById("llenarCampos").addEventListener("click",async () =>{
   let respuesta= await fetch ('App.php');
   let dato =await respuesta.json();
-    document.getElementById("Nombres").value = dato.Nombre;
+    document.getElementById("Nombre").value = dato.Nombre;
     document.getElementById("Apellidos").value = dato.Apellido;
     document.getElementById("Correo").value = dato.Correo;
     document.getElementById("Genero").value = dato.Genero;

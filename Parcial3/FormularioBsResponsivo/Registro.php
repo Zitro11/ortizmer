@@ -12,7 +12,7 @@ $usuarioV = $_POST['Usuario'];
 $contraseña = $_POST['Contraseña'];
 $correo = $_POST['Correo'];
 
-$consultaSQL = "INSERT INTO USUARIOS (id, Usuario, Contraseña, Correo) VALUES (NULL,'$usuarioV' , '$contraseña', '$correo')";   
+$consultaSQL = "INSERT INTO USUARIOS (id, Usuario, Contraseña, Correo) VALUES ('NULL','$usuarioV' , '$contraseña', '$correo')";   
 $registros = mysqli_query($con,$consultaSQL) or die ("Problema en el INSERT");
 
 

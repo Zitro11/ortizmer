@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    $('#btnIniciar').click(function(e) {
+    $('#btnRegistrarse').click(function(e) {
         e.preventDefault();
         try {
             let Usuario = document.getElementById("Usuario").value;
