@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FormularioBS copy.css">
+    <link rel="stylesheet" href="./Registro.css">
+    <script type="text/javascript" charset="utf8" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+</head>
+<body>
+    <div class="login-container">
+        <form id="form" action="" class="form-login">
+            <ul class="login-nav">
+                <li class="login-nav__item">
+                    <a href="./Login.html">Iniciar Sesion</a>
+                </li>
+                <li class="login-nav__item active">
+                    <a href="#">Registrarse</a>
+                </li>
+            </ul>
+            <label for="Usuario" class="login__label">
+                Usuario:
+            </label>
+            <input id="Usuario" name="Usuario" class="login__input" type="text" >
+
+            <label for="Contraseña" class="login__label">
+                Contraseña:
+            </label>
+            <input id="Contraseña" name="Contraseña" class="login__input" type="password">
+
+            <label for="Correo" class="login__label">
+                Correo:
+            </label>
+            <input id="Correo" name="Correo" class="login__input" type="email" >
+
+            <label for="login-sign-up" class="login__label--checkbox">
+                <input id="login-sign-up" type="checkbox" class="login__input--checkbox" >
+                Recordarme
+            </label>
+            
+            <button id="btnRegistrarse" class="login__submit"> Registriarse </button>
+            
+        </form>
+    </div>
+
+    <script src="./Registro.js"></script>
+
+</body>
+</html>

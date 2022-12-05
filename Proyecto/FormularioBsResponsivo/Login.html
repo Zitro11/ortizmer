@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <form action="" class="form-login">
+            <ul class="login-nav">
+                <li class="login-nav__item active">
+                    <a href="#">Iniciar Sesion</a>
+                </li>
+                <li class="login-nav__item">
+                    <a href="./Registro.html">Registrarse</a>
+                </li>
+            </ul>
+            <label for="Usuario" class="login__label">
+                Usuario:
+            </label>
+            <input id="Usuario" name="Usuario" class="login__input" type="text" />
+            <label for="Contraseña" name="Contraseña" class="login__label">
+                Contraseña:
+            </label>
+            <input id="login-input-password" class="login__input" type="password" />
+            <label for="login-sign-up" class="login__label--checkbox">
+                <input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
+                Mantenerme iniciado
+            </label>
+            
+            <button id="btnIniciar" class="login__submit"> Iniciar </button>
+            
+        </form>
+        <a href="#" class="login__forgot">¿Olvidaste tu contraseña?</a>
+    </div>
+
+    <script src="./Login.js"></script>
+
+</body>
+</html>

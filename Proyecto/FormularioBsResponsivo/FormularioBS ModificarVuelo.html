@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="FormularioBS copy.css">
+  <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <title>Formulario Registro</title>
+
+</head>
+<body>
+
+
+<!--CREACION NAVBAR-->
+	<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+  <div class="container">
+    <a class="navbar-brand" href="./FormularioBS copy.html"><img src="./fotos/IconoAv.png" height="50" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+ 
+    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link mx-2" aria-current="page" href="./FormularioBS copy.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="./FormularioBS ConsultarVuelo.html">Consultar Vuelo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2 active" href="#">Modificar Vuelo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="./FormularioBS CancelarVuelo.html">Cancelar Vuelo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cuenta
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+            <li><a class="dropdown-item" href="#">Registrar</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--FIN CREACION NAVBAR-->
+
+
+<!--CREACION FORMULARIO-->
+<div>
+  <form method="post" action="FormularioBS ModificarVuelo.php" id="formulario">
+  <div class="row">
+
+    <!--PARTE IZQUIERDA DEL FORMULARIO-->
+    <div id="Izquierda" class="col-md-3">
+
+      <!--Parte alta-->
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="Titulo">D E S P E G A</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="vacaciones" class="col-md-12">
+          <img class="ResponsiveImage" width="60%" src="./fotos/vacaciones.png">
+        </div>
+      </div>
+        
+
+    <!--Parte baja-->
+    <div class="row">
+      <div class="col-md-12">
+        <br></br>
+        <h2 id="introduccion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque vel possimus cum accusamus distinctio perspiciatis perferendis. Sunt delectus magni optio 
+          accusantium provident corporis cum ad. Culpa voluptates similique esse inventore? p</h2>
+      </div>
+    </div>
+
+    </div>
+    <!--FIN IZQUIERDA DEL FORMULARIO-->
+
+  
+    <!--PARTE DERECHA DEL FORMULARIO-->
+    <div id="Derecha" class="col-md-9">
+      <!--INICIO DEL FORMULARIO-->
+    <div class="form-register" id="registro">
+
+    <!--Parte alta del formulario-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 id="Consulta">Ingresa el ID del vuelo a Modificar:</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <input type="number" name="id_Consulta" id="id_Consulta">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <button type="submit" class="botonC" id="btnID">Consulta</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="TituloFormulario">Datos Personales</h1>
+      </div>
+    </div>
+    
+    <!--Parte DATOS PERSONALES-->
+    <div class="row">
+
+      <!--ABRIMOS LA PRIMER COLUMNA-->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+        <!--PRIMER RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Nombre" class="text">Nombre</label>
+            <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ej. Mauro">
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Apellidos" class="text">Apellidos</label>
+            <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Ej. Lombardo">
+          </div>
+        </div>
+      
+      </div>
+
+      <!--ABRIMOS LA SEGUNDA COLUMNA-->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+        <!--PRIMER RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Correo" class="text">Correo</label>
+            <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ej. abdcejf@gmail.com">
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Genero" class="text">Genero</label>
+            <select class="controls" name="Genero" id="Genero">
+              <option selected="selected">Hombre</option>
+              <option>Mujer</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <!--ABRIMOS LA TERCERA COLUMNA-->
+      <div class="col-sm-12 col-md-12 col-lg-4">
+
+         <!--PRIMER RENGLON-->
+         <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Telefono" class="text">Telefono</label>
+            <input class="controls" type="text" name="Telefono" id="Telefono" placeholder="Ej. 867 167 57 80">
+            </select>
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Fecha" class="text">Nacimiento</label>
+            <input class="controls" type="date" id="Fecha" name="Fecha" min="2001-01-01" max="2022-12-31">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Parte MEIDA DEL FORMULARIO-->
+    
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        <h1 id="TituloFormulario">Vuelo</h1>
+      </div>
+    </div>
+
+    <!--Parte DATOS RESERVA-->
+    <div class="row">
+
+      <!--ABRIMOS LA PRIMER COLUMNA-->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+        <!--PRIMER RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Origen" class="text">Origen</label>
+            <input class="controls" type="text" name="Origen" id="Origen" placeholder="Ej. Monterrey">
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Destino" class="text">Destino</label>
+            <input class="controls" type="text" name="Destino" id="Destino" placeholder="Ej. Guadalajara">
+          </div>
+        </div>  
+      </div>
+
+      <!--ABRIMOS LA SEGUNDA COLUMNA-->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+        <!--PRIMER RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Aerolinea" class="text">Aerolinea</label>
+            <select class="controls" type="text" name="Aerolinea" id="Aerolinea">
+              <option>Qatar Airways</option>
+              <option selected="selected">American Airlines</option>
+              <option>Aeromexico</option>
+            </select>
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Pasajeros" class="text">Pasajeros</label>
+            <input class="controls" type="number" min="1" max="6" name="Pasajeros" id="Pasajeros" >
+          </div>
+        </div>
+
+      </div>
+
+      <!--ABRIMOS LA TERCERA COLUMNA-->
+      <div class="col-sm-12 col-md-12 col-lg-4">
+
+         <!--PRIMER RENGLON-->
+         <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Ida" class="text">Ida</label>
+            <input class="controls" type="date" id="Ida" name="Ida" min="2022-11-01" max="2023-02-25">
+          </div>
+        </div>
+
+        <!--SEGUNDO RENGLON-->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <label for="Vuelta" class="text">Vuelta</label>
+            <input class="controls" type="date" id="Vuelta" name="Vuelta" min="2022-11-02" max="2023-02-25">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  <!--Parte baja del formulario-->
+    <br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="botons2" id="liveToastBtn">Verificar</button>
+      </div>
+
+      <br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Button HTML (to Trigger Modal) -->
+          <button type="submit" class="botons" id="btnModificar" disabled>Modificar Vuelo</button>
+      </div>
+    </div>
+
+    </div>
+    <!--FIN DEL FORMULARIO-->
+    </div>
+    <!--FIN DERECHA DEL FORMULARIO-->
+  </form>
+  </div>
+<!--FIN CREACION FORMULARIO-->
+
+
+
+<!--CREACION MODAL-->
+<div class="m-4">
+  <!-- Modal HTML -->
+  <div id="myModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Confirma tu reservación</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                      <small id="datosReserva">
+                        <p>Datos Reverva</p>
+                        <label for="">Nombre:</label> <label id="NombreM"></label>
+                        <br><label for="">Apellido:</label> <label id="ApellidoM"></label>
+                        <br><label for="">Correo:</label> <label id="CorreoM"></label>
+                        <br><label for="">Genero:</label> <label id="GeneroM"></label>
+                        <br><label for="">Telefono:</label> <label id="TelefonoM"></label>
+                        <br><label for="">Nacimiento:</label> <label id="NacimientoM"></label>
+                      </small>
+
+                      <small id="datosVuelo">
+                        <p>Datos Vuelo</p>
+                        <br><label for="">Origen:</label> <label id="OrigenM"></label>
+                        <br><label for="">Destino:</label> <label id="DestinoM"></label>
+                        <br><label for="">Aerolinea:</label> <label id="AerolineaM"></label>
+                        <br><label for="">Pasajeros:</label> <label id="PasajerosM"></label>
+                        <br><label for="">Ida:</label> <label id="IdaM"></label>
+                        <br><label for="">Vuelta:</label> <label id="VueltaM"></label>
+                      </small>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" id="btnCancelarModal" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" id="btnGuardarModal" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--FIN CREACION MODAL-->
+
+
+<!--CREACION TOAST-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="./fotos/azafata.jpg" width="35%" class="rounded me-2">
+      <strong class="me-auto">Perfecto!</strong>
+      <small>Just Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Todos los campos son correctos!
+    </div>
+  </div>
+</div>
+<!--FIN CREACION TOAST-->
+
+
+<script src="FormularioBS ModificarVuelo.js"></script>
+
+</body>
+</html>
